@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Event Handling</title>
+    <script type="text/javascript">
+        function jk_headdown() {
+            document.getElementById("image1").src = "Art Gallery management project/minion.jpg"
+        }
+        function jk_headup() {
+            document.getElementById("image1").src = "Art Gallery management project/minion.jpg"
+        }
+        function tata() {
+            document.getElementById("image2").src = "Art Gallery management project/owl.jpg"
+        }
+        function tatasmile() {
+            document.getElementById("image2").src = "Art Gallery management project/owl.jpg"
+        }
+        function rj() {
+            document.getElementById("image3").src = "Art Gallery management project/shinchan.jpg"
+        }
+        function rj2() {
+            document.getElementById("image3").src = "Art Gallery management project/shinchan.jpg"
+        }
+    </script>
+    
+    <center>
+        <h1 onmousemove="style.color='Blue'" onmouseout="style.color='Red'">Keep Your Mouse Here</h1>
+    </center> <br /><br />
+</head>
+<body>
+    <center>
+        <img src="Art Gallery management project/minion.jpg" id="image1" height="500px" width="300px" onclick="jk_headdown()" ondblclick="jk_headup()" />
+        <img src="Art Gallery management project/owl.jpg" id="image2" height="500px" width="424px"  onmouseup="tata()" onmousedown="tatasmile()" />
+        <img src="Art Gallery management project/shinchan.jpg" id="image3" height="500px" width="300px" onmouseover="rj()" onmouseout="rj2()" />
+    </center>
+</body>
+</html>
